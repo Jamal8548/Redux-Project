@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with Create React App with Redux
+![snap1](https://user-images.githubusercontent.com/57535574/159953312-c02dbb04-f8cf-40ed-a6e7-43525ada55af.PNG)
+# React Router Dom
+![two](https://user-images.githubusercontent.com/57535574/159953405-ab1c1ace-fdf3-49d2-80fc-7abeb9b25b40.PNG)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
