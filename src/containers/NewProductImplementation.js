@@ -1,36 +1,21 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+import React from "react";
 import { CardActionArea } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  removeselectedProduct,
-  fetchProduct,
-} from "../redux/actions/productActions";
-const ProductDetail = () => {
-  const product = useSelector((state) => state.product);
-  const { id, title, image, price, category } = product;
-  console.log("jamal", product);
-  const dispatch = useDispatch();
-  const { productId } = useParams();
-
-  useEffect(() => {
-    if (productId && productId !== "") dispatch(fetchProduct(productId));
-    return () => {
-      dispatch(removeselectedProduct());
-    };
-  }, [productId]);
+import { useSelector } from "react-redux";
+import "./productComponent.css";
+function NewProductImplementation() {
+  const data = useSelector((state) => state.createIT);
+  console.log("check it", { data });
+  if (data == 0) return console.log(true);
+  const { id, image, title, price, category } = data;
 
   return (
     <>
-      {Object.keys(product).length === 0 ? (
-        <div>...Loading</div>
-      ) : (
-        <div style={{ marginTop: 50 }}>
+      {Object.keys(data).length === 1 ? null : (
+        <div className="checkitout">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
@@ -40,6 +25,9 @@ const ProductDetail = () => {
                 alt="green iguana"
               />
               <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  ID:0
+                </Typography>
                 <Typography gutterBottom variant="h5" component="div">
                   {title}
                 </Typography>
@@ -56,5 +44,6 @@ const ProductDetail = () => {
       )}
     </>
   );
-};
-export default ProductDetail;
+}
+
+export default NewProductImplementation;

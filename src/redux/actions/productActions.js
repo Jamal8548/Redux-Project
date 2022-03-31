@@ -10,6 +10,34 @@ export const fetchProduct = (id) => async (dispatch) => {
   const response = await fakeStoreApi.get(`/products/${id}`);
   dispatch({ type: ActionTypes.SELECTED_PRODUCT, payload: response.data });
 };
+export const deleteProduct = (id) => async (dispatch) => {
+  const del = fakeStoreApi
+    .delete(`/products/${id}`)
+    .then(function (response) {
+      dispatch({ type: ActionTypes.DELETE_PRODUCT, payload: response });
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+};
+export const create_product = (inputField) => async (dispatch) => {
+  const posti = await fakeStoreApi
+    .post("/products", {
+      title: inputField.title,
+      price: inputField.price,
+      Id: inputField.Id,
+      image: inputField.image,
+      category: inputField.category,
+    })
+    .then(function (response) {
+      dispatch({ type: ActionTypes.CREATE_PRODUCT, payload: response.data });
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+};
 
 export const setProducts = (products) => {
   return {
