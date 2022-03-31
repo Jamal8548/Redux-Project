@@ -10,7 +10,7 @@ Ping me @
  - [Email](mailto:jamal8548@gmail.com)
  -  [Github](https://github.com/Jamal8548)
  - [Linkedin](https://www.linkedin.com/in/jamal-ashraf-231906196/)
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
