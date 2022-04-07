@@ -1,7 +1,18 @@
-# Getting Started with Create React App with Redux
-![snap1](https://user-images.githubusercontent.com/57535574/159953312-c02dbb04-f8cf-40ed-a6e7-43525ada55af.PNG)
-# React Router Dom
-![two](https://user-images.githubusercontent.com/57535574/159953405-ab1c1ace-fdf3-49d2-80fc-7abeb9b25b40.PNG)
+# Getting Started with my updated React App with Redux as addional functionalities are added so interface is changed now
+
+
+![1](https://user-images.githubusercontent.com/57535574/162247156-778ff32a-d455-4b7e-b6f5-60eddb0b400b.PNG)
+
+![2](https://user-images.githubusercontent.com/57535574/162247243-9864f3e7-16a3-4a30-a38a-d7f306f2a080.PNG)
+
+![3](https://user-images.githubusercontent.com/57535574/162247262-0d9ac613-5599-41f1-a1bf-20b01cd64955.PNG)
+
+![4](https://user-images.githubusercontent.com/57535574/162247396-dd45a08a-06cf-4f23-a885-9a6824dac61c.PNG)
+
+![5](https://user-images.githubusercontent.com/57535574/162247306-9da17c75-dbed-4106-a993-e1cae85fb05d.PNG)
+
+![7](https://user-images.githubusercontent.com/57535574/162247329-8900d386-7ca6-4b4d-a248-534ccbd10db5.png)
+
 
 Ping me @
 -
